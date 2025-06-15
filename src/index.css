@@ -7,44 +7,44 @@
 
 @layer base {
   :root {
-    --background: 220 26% 8%;
-    --foreground: 220 9% 95%;
+    --background: 220 20% 4%;
+    --foreground: 220 5% 95%;
 
-    --card: 220 23% 12%;
-    --card-foreground: 220 9% 95%;
+    --card: 220 16% 8%;
+    --card-foreground: 220 5% 95%;
 
-    --popover: 220 23% 12%;
-    --popover-foreground: 220 9% 95%;
+    --popover: 220 16% 8%;
+    --popover-foreground: 220 5% 95%;
 
-    --primary: 262 83% 58%;
+    --primary: 220 100% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 23% 15%;
-    --secondary-foreground: 220 9% 95%;
+    --secondary: 220 12% 12%;
+    --secondary-foreground: 220 5% 90%;
 
-    --muted: 220 23% 15%;
-    --muted-foreground: 220 9% 70%;
+    --muted: 220 12% 12%;
+    --muted-foreground: 220 5% 65%;
 
-    --accent: 262 83% 58%;
+    --accent: 220 100% 60%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 75% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 23% 20%;
-    --input: 220 23% 20%;
-    --ring: 262 83% 58%;
+    --border: 220 12% 18%;
+    --input: 220 12% 18%;
+    --ring: 220 100% 60%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 220 26% 8%;
-    --sidebar-foreground: 220 9% 95%;
-    --sidebar-primary: 262 83% 58%;
+    --sidebar-background: 220 20% 4%;
+    --sidebar-foreground: 220 5% 95%;
+    --sidebar-primary: 220 100% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 23% 15%;
-    --sidebar-accent-foreground: 220 9% 95%;
-    --sidebar-border: 220 23% 20%;
-    --sidebar-ring: 262 83% 58%;
+    --sidebar-accent: 220 12% 12%;
+    --sidebar-accent-foreground: 220 5% 90%;
+    --sidebar-border: 220 12% 18%;
+    --sidebar-ring: 220 100% 60%;
   }
 }
 
@@ -64,24 +64,24 @@
 
 @layer utilities {
   .gradient-primary {
-    background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 50%, #06b6d4 100%);
+    background: linear-gradient(135deg, #0066ff 0%, #0052cc 50%, #003d99 100%);
   }
   
   .gradient-text {
-    background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 50%, #06b6d4 100%);
+    background: linear-gradient(135deg, #0066ff 0%, #0052cc 50%, #003d99 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .glass-effect {
-    backdrop-filter: blur(10px);
-    background: rgba(15, 23, 42, 0.7);
-    border: 1px solid rgba(148, 163, 184, 0.1);
+    backdrop-filter: blur(16px);
+    background: rgba(15, 18, 25, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .tech-glow {
-    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 0 24px rgba(0, 102, 255, 0.2);
   }
 
   .hover-lift {
