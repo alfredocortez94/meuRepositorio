@@ -1,9 +1,8 @@
 
-# 🚀 Portfólio Pessoal - João Silva
+# 🚀 Portfólio Pessoal - Alfredo Cortez
 
 Um portfólio moderno e responsivo para Desenvolvedor Full Stack, construído com React, TypeScript e Tailwind CSS.
 
-![Preview do Portfólio](https://via.placeholder.com/800x400/0F1419/00D4FF?text=Portfolio+Preview)
 
 ## ✨ Características
 
@@ -185,9 +184,6 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 📞 Contato
 
-João Silva - [@joaosilva](https://linkedin.com/in/joaosilva) - joao@email.com
-
-Link do Projeto: [https://github.com/seu-usuario/portfolio-joao-silva](https://github.com/seu-usuario/portfolio-joao-silva)
 
 ---
 
