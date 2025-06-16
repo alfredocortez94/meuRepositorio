@@ -36,7 +36,7 @@ const ContactSection = () => {
                       <div>
                         <p className="font-semibold">E-mail</p>
                         <a href="mailto:joao@exemplo.com" className="text-primary hover:underline">
-                          joao@exemplo.com
+                          alfredocortez.dev@gmail.com
                         </a>
                       </div>
                     </div>
@@ -49,7 +49,7 @@ const ContactSection = () => {
                       </div>
                       <div>
                         <p className="font-semibold">Localização</p>
-                        <p className="text-muted-foreground">São Paulo, Brasil</p>
+                        <p className="text-muted-foreground">Teresina, Brasil</p>
                       </div>
                     </div>
 
@@ -61,8 +61,8 @@ const ContactSection = () => {
                       </div>
                       <div>
                         <p className="font-semibold">WhatsApp</p>
-                        <a href="https://wa.me/5511999999999" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">
-                          +55 (11) 99999-9999
+                        <a href="https://wa.me/5586994218604" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">
+                          +55 (86) 99421-8604
                         </a>
                       </div>
                     </div>
@@ -74,7 +74,7 @@ const ContactSection = () => {
                   <h4 className="text-lg font-semibold mb-4">Redes Sociais</h4>
                   <div className="flex gap-4">
                     <a
-                      href="https://linkedin.com"
+                      href="https://linkedin.com/in/alfredo-cortezdev/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all duration-300"
@@ -82,7 +82,7 @@ const ContactSection = () => {
                       <Linkedin className="w-5 h-5" />
                     </a>
                     <a
-                      href="https://github.com"
+                      href="https://github.com/alfredocortez94"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all duration-300"
@@ -90,7 +90,7 @@ const ContactSection = () => {
                       <Github className="w-5 h-5" />
                     </a>
                     <a
-                      href="https://instagram.com"
+                      href="https://instagram.com/alfredo.cortezr"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all duration-300"
@@ -98,7 +98,7 @@ const ContactSection = () => {
                       <Instagram className="w-5 h-5" />
                     </a>
                     <a
-                      href="https://wa.me/5511999999999"
+                      href="https://wa.me/5586994218604"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all duration-300"
@@ -137,7 +137,7 @@ const ContactSection = () => {
         {/* Footer */}
         <div className="text-center mt-16 pt-8 border-t border-border/50">
           <p className="text-muted-foreground">
-            © 2024 João Silva. Todos os direitos reservados.
+            © 2025 Alfredo Cortez. Todos os direitos reservados.
           </p>
           <p className="text-sm text-muted-foreground mt-2">
             Desenvolvido com ❤️ e muito ☕

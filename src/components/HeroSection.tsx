@@ -27,8 +27,8 @@ const HeroSection = () => {
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-500 to-blue-500 p-1">
               <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" 
-                  alt="João Silva" 
+                  src="" 
+                  alt="Alfredo Cortez" 
                   className="w-28 h-28 rounded-full object-cover"
                 />
               </div>
@@ -38,7 +38,7 @@ const HeroSection = () => {
 
           {/* Main Title */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Olá, sou <span className="gradient-text">João Silva</span>
+            Olá, sou <span className="gradient-text">Alfredo Cortez</span>
           </h1>
           <h2 className="text-2xl md:text-3xl font-light mb-8 text-muted-foreground">
             Desenvolvedor Full Stack
@@ -72,7 +72,7 @@ const HeroSection = () => {
           {/* Social Links */}
           <div className="flex gap-6 justify-center">
             <a 
-              href="https://linkedin.com" 
+              href="https://linkedin.com/in/alfredo-cortezdev/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all duration-300"
@@ -80,7 +80,7 @@ const HeroSection = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a 
-              href="https://github.com" 
+              href="https://github.com/alfredocortez94" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all duration-300"
@@ -88,7 +88,7 @@ const HeroSection = () => {
               <Github className="w-5 h-5" />
             </a>
             <a 
-              href="https://instagram.com" 
+              href="https://instagram.com/alfredo.cortezr"
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all duration-300"
@@ -96,7 +96,7 @@ const HeroSection = () => {
               <Instagram className="w-5 h-5" />
             </a>
             <a 
-              href="https://wa.me/5511999999999" 
+              href="https://wa.me/5586994218604" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center hover:bg-primary/20 hover:scale-110 transition-all duration-300"
