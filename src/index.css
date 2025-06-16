@@ -7,44 +7,44 @@
 
 @layer base {
   :root {
-    --background: 220 20% 4%;
-    --foreground: 220 5% 95%;
+    --background: 222 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 220 16% 8%;
-    --card-foreground: 220 5% 95%;
+    --card: 222 84% 4.9%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 220 16% 8%;
-    --popover-foreground: 220 5% 95%;
+    --popover: 222 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 220 100% 60%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222 84% 4.9%;
 
-    --secondary: 220 12% 12%;
-    --secondary-foreground: 220 5% 90%;
+    --secondary: 217 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 220 12% 12%;
-    --muted-foreground: 220 5% 65%;
+    --muted: 217 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 220 100% 60%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 217 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 75% 60%;
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 12% 18%;
-    --input: 220 12% 18%;
-    --ring: 220 100% 60%;
+    --border: 217 32.6% 17.5%;
+    --input: 217 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    --sidebar-background: 220 20% 4%;
-    --sidebar-foreground: 220 5% 95%;
-    --sidebar-primary: 220 100% 60%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 12% 12%;
-    --sidebar-accent-foreground: 220 5% 90%;
-    --sidebar-border: 220 12% 18%;
-    --sidebar-ring: 220 100% 60%;
+    --sidebar-background: 222 84% 4.9%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 210 40% 98%;
+    --sidebar-primary-foreground: 222 84% 4.9%;
+    --sidebar-accent: 217 32.6% 17.5%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 32.6% 17.5%;
+    --sidebar-ring: 212.7 26.8% 83.9%;
   }
 }
 
@@ -64,11 +64,11 @@
 
 @layer utilities {
   .gradient-primary {
-    background: linear-gradient(135deg, #0066ff 0%, #0052cc 50%, #003d99 100%);
+    background: linear-gradient(135deg, #00d4ff 0%, #0099cc 50%, #006699 100%);
   }
   
   .gradient-text {
-    background: linear-gradient(135deg, #0066ff 0%, #0052cc 50%, #003d99 100%);
+    background: linear-gradient(135deg, #00d4ff 0%, #0099cc 50%, #006699 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -81,7 +81,7 @@
   }
 
   .tech-glow {
-    box-shadow: 0 0 24px rgba(0, 102, 255, 0.2);
+    box-shadow: 0 0 24px rgba(0, 212, 255, 0.2);
   }
 
   .hover-lift {
