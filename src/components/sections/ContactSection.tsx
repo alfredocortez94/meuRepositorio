@@ -1,20 +1,29 @@
 
+import React from "react";
 import { Github, Linkedin, Instagram } from "lucide-react";
+import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import { cn } from "@/lib/utils";
+import SectionHeader from "@/components/SectionHeader";
 
 const ContactSection = () => {
+  const { ref, isIntersecting } = useIntersectionObserver({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
   return (
-    <section className="py-20 relative">
+    <section
+      className={cn(
+        "py-20 relative",
+        isIntersecting ? "animate-fade-in" : "opacity-0"
+      )}
+      ref={ref}
+    >
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
-            Vamos Conversar?
-          </h2>
-          <div className="w-24 h-1 gradient-primary mx-auto mb-8"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Estou sempre aberto a novas oportunidades e projetos interessantes. 
-            Entre em contato para discutirmos como posso ajudar a transformar suas ideias em realidade.
-          </p>
-        </div>
+        <SectionHeader
+          title="Vamos Conversar?"
+          description="Estou sempre aberto a novas oportunidades e projetos interessantes. Entre em contato para discutirmos como posso ajudar a transformar suas ideias em realidade."
+        />
 
         <div className="max-w-4xl mx-auto">
           <div className="glass-effect rounded-2xl p-8 md:p-12 tech-glow">

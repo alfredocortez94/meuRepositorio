@@ -1,18 +1,30 @@
 
+import React from "react";
+import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import { cn } from "@/lib/utils";
+import SectionHeader from "@/components/SectionHeader";
+
 const AboutSection = () => {
+  const { ref, isIntersecting } = useIntersectionObserver({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
   return (
-    <section id="sobre" className="py-20 relative">
+    <section
+      id="sobre"
+      ref={ref}
+      className={cn(
+        "py-20 relative",
+        isIntersecting ? "animate-fade-in" : "opacity-0"
+      )}
+    >
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
-              Minha Jornada
-            </h2>
-            <div className="w-24 h-1 gradient-primary mx-auto mb-8"></div>
-          </div>
+          <SectionHeader title="Minha Jornada" />
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 animate-fade-in">
+            <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Sou um desenvolvedor Full Stack apaixonado por criar soluções digitais que fazem a diferença. 
                 Com mais de 5 anos de experiência, especializo-me em transformar ideias complexas em 
@@ -46,7 +58,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className="relative animate-slide-in-right">
+            <div className="relative">
               <div className="glass-effect rounded-2xl p-8 tech-glow">
                 <h3 className="text-2xl font-semibold mb-6 gradient-text">
                   Experiência & Valores
@@ -55,7 +67,7 @@ const AboutSection = () => {
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center text-white font-bold">
-                      5+
+                      2+
                     </div>
                     <div>
                       <h4 className="font-semibold">Anos de Experiência</h4>
@@ -65,7 +77,7 @@ const AboutSection = () => {
                   
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center text-white font-bold">
-                      50+
+                      10+
                     </div>
                     <div>
                       <h4 className="font-semibold">Projetos Entregues</h4>
@@ -75,7 +87,7 @@ const AboutSection = () => {
                   
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center text-white font-bold">
-                      20+
+                      10+
                     </div>
                     <div>
                       <h4 className="font-semibold">Tecnologias</h4>

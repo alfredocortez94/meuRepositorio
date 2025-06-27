@@ -1,14 +1,15 @@
 
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Instagram } from "lucide-react";
 
 const HeroSection = () => {
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = React.useCallback((sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-  };
+  }, []);
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">

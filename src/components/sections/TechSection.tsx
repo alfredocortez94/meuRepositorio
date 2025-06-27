@@ -1,6 +1,16 @@
 
+import React from "react";
+import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import { cn } from "@/lib/utils";
+import SectionHeader from "@/components/SectionHeader";
+
 const TechSection = () => {
-  const technologies = [
+  const { ref, isIntersecting } = useIntersectionObserver({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
+  const technologies = React.useMemo(() => [
     {
       category: "Frontend",
       techs: [
@@ -34,24 +44,25 @@ const TechSection = () => {
         { name: "Kubernetes", icon: "⚙️", color: "from-blue-600 to-purple-600" }
       ]
     }
-  ];
+  ], []);
 
   return (
-    <section className="py-20 relative">
+    <section
+      className={cn(
+        "py-20 relative",
+        isIntersecting ? "animate-fade-in" : "opacity-0"
+      )}
+      ref={ref}
+    >
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
-            Tecnologias que Domino
-          </h2>
-          <div className="w-24 h-1 gradient-primary mx-auto mb-8"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Trabalho com as principais tecnologias do mercado para criar soluções completas e escaláveis
-          </p>
-        </div>
+        <SectionHeader
+          title="Tecnologias que Domino"
+          description="Trabalho com as principais tecnologias do mercado para criar soluções completas e escaláveis"
+        />
 
         <div className="space-y-16">
           {technologies.map((category, categoryIndex) => (
-            <div key={category.category} className="animate-fade-in" style={{ animationDelay: `${categoryIndex * 0.2}s` }}>
+            <div key={category.category} style={{ animationDelay: `${categoryIndex * 0.2}s` }}>
               <h3 className="text-2xl font-semibold text-center mb-8 text-primary">
                 {category.category}
               </h3>

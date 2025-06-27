@@ -1,9 +1,17 @@
-
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
+import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
+import { cn } from "@/lib/utils";
+import SectionHeader from "@/components/SectionHeader";
 
 const ProjectsSection = () => {
-  const projects = [
+  const { ref, isIntersecting } = useIntersectionObserver({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
+  const projects = React.useMemo(() => [
     {
       id: 1,
       title: "E-Commerce Platform",
@@ -64,26 +72,28 @@ const ProjectsSection = () => {
       githubUrl: "#",
       featured: true
     }
-  ];
+  ], []);
 
   return (
-    <section id="projetos" className="py-20 relative">
+    <section
+      id="projetos"
+      ref={ref}
+      className={cn(
+        "py-20 relative",
+        isIntersecting ? "animate-fade-in" : "opacity-0"
+      )}
+    >
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
-            Meus Projetos
-          </h2>
-          <div className="w-24 h-1 gradient-primary mx-auto mb-8"></div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Alguns dos projetos que desenvolvi, desde aplicações web complexas até APIs robustas
-          </p>
-        </div>
+        <SectionHeader
+          title="Meus Projetos"
+          description="Alguns dos projetos que desenvolvi, desde aplicações web complexas até APIs robustas"
+        />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className={`group relative hover-lift animate-fade-in ${
+              className={`group relative hover-lift ${
                 project.featured ? 'md:col-span-2 lg:col-span-1' : ''
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
